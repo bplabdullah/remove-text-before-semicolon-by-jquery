@@ -1,0 +1,7 @@
+jQuery(function(){
+    jQuery('h1.elementor-heading-title').each(function(){
+      text = jQuery(this).text();
+      textSplit = text.split(':');
+      jQuery(this).text(textSplit[1]);
+  });
+});
